@@ -6,6 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+/* __Ajout d'une classe stylant le cursor */
+.cursor-style__pointer {
+	cursor: pointer;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
