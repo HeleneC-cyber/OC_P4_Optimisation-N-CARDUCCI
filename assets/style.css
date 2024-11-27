@@ -44,8 +44,14 @@ body {
 	color: #000
 }
 
+/* __Ajout style du texte de la balise a d'instagram__ */
+.social-link {
+	font-size: 0;
+}
+
 .social-link img {
 	width: 20px;
+	vertical-align: top;
 }
 
 #about {
@@ -85,11 +91,12 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
+#about-me .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
 #about-me p {
 	width: 80%;
@@ -107,12 +114,13 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	/* color: #fff; */
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
 }
 .item-column {
 	position: relative;
@@ -143,20 +151,21 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
-	font-style: italic;
+	/* font-family: 'Spectral';
+	font-style: italic; */
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
+	line-height: 1.2;
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -207,6 +216,11 @@ body {
 #contact .container {
 	display: flex;
 }
+
+#contact h2 {
+	font-size: 1.75rem;
+}
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -261,7 +275,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me .about-me__introduction, #about-me p {
 		width: 100%;
 	}
 }
