@@ -6,7 +6,10 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-
+/* __Ajout du style h2, ne correspond pas au bootstrap__ */
+h2 {
+	font-size: 1.75rem !important;
+}
 /* __Ajout d'une classe stylant le cursor */
 .cursor-style__pointer {
 	cursor: pointer;
@@ -89,7 +92,7 @@ body {
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
-	font-size: 30px;
+	font-size: 30px !important;
 }
 #about-me .about-me__introduction {
 	font-family: 'Spectral';
@@ -97,15 +100,17 @@ body {
 	font-style: italic;
 	width: 60%;
 	font-size: 1rem;
+	line-height: 1.2;
+	margin-bottom: 8px;
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
+/* #gallery { */
 	/*	min-height: 100vh; */
-}
+/* } */
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -155,7 +160,7 @@ body {
 	font-style: italic; */
 	width: 70%;
 	margin: auto;
-	padding-block: 3em;
+	padding-block: calc(3em + 1rem);
 }
 .quote__text {
 	font-family: 'Spectral';
@@ -217,10 +222,6 @@ body {
 	display: flex;
 }
 
-#contact h2 {
-	font-size: 1.75rem;
-}
-
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -262,6 +263,22 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+/* __Ajout d'un footer avec microdonnées__ */
+footer {
+	position: relative;
+	/* background-color: #F6D2B8; */
+	display: flex;
+}
+footer .disponibility {
+	background-color: #F6D2B8;
+}
+footer .location {
+	background-color: #E5975F;
+}
+footer .location p {
+	margin-bottom: 0;
 }
 
 @media all and (max-width: 1180px) {
