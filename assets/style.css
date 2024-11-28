@@ -8,7 +8,7 @@ body {
 }
 /* __Ajout du style h2, ne correspond pas au bootstrap__ */
 h2 {
-	font-size: 1.75rem !important;
+	font-size: calc(1.3rem + 0.6vw) !important;
 }
 /* __Ajout d'une classe stylant le cursor */
 .cursor-style__pointer {
@@ -166,7 +166,7 @@ h2 {
 	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-	font-size: 2.5rem;
+	font-size: calc(1.375rem + 1.5vw);
 	line-height: 1.2;
 }
 .quote__author {
@@ -280,6 +280,15 @@ footer .location {
 footer .location p {
 	margin-bottom: 0;
 }
+
+@media (min-width: 1200px) {
+	h2 {
+	font-size: 1.75rem !important;
+	}
+	.quote__text {
+	  font-size: 2.5rem;
+	}
+  }
 
 @media all and (max-width: 1180px) {
 	.picture {
