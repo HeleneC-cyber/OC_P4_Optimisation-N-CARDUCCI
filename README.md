@@ -32,7 +32,15 @@
 ![Séparateur coloré](./assets/images/readme/séparateur.png)
 
 ## 📂 Structure
-📁 OC_P4_Optimisation-N_CARDUCCI/ │── 📁 images/ │── 📁 css/ │── index.html │── README.md
+📁 OC_P4_Optimisation-N_CARDUCCI/ 
+│── 📁 assets/ 
+│    └── 📁 bootstrap/ 
+│    └── 📁 images/
+│    └── maugallery.js
+│    └── scripts.js
+│    └── style.css
+│── index.html 
+│── README.md
 <br><br>
 
 ## 🚀 Installation
